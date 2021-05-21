@@ -1,0 +1,360 @@
+body {
+  background-color: #111;
+  color: whitesmoke;
+  opacity: 1;
+  padding-left: 130px;
+  overflow: hidden;
+
+  /**SECCIONES**/
+  .section {
+    min-height: 100vh;
+  }
+
+  /*****Header*****/
+  header {
+    width: 130px;
+    #logocont {
+      margin: 15px;
+      p {
+        font-family: "Bungee", cursive;
+        color: white;
+        text-align: center;
+        max-width: 100px;
+      }
+    }
+    align-items: center;
+    .sidenav {
+      height: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: black;
+      text-decoration: none;
+      a {
+        color: #818181;
+        display: block;
+        padding: auto;
+        margin: 15px 0 15px 0;
+        display: flex;
+        justify-content: center;
+        img {
+          color: #f1f1f1;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  /*****Títulos*****/
+  #cont_txt {
+    text-align: center;
+    padding-top: 1.5rem;
+    #cont_tit,
+    #cont_tit-p {
+      @keyframes glow-title {
+        from {
+          text-shadow: 0 0 10px #75ff33, 0 0 20px #75ff33;
+        }
+        to {
+          text-shadow: 0 0 15px #75ff33;
+        }
+      }
+      font-size: 2.9rem;
+      -webkit-text-stroke: 1px #75ff33;
+      -webkit-text-fill-color: transparent;
+      animation: glow-title 2s ease-in-out infinite alternate;
+    }
+    #cont_tit {
+      font-family: "Bungee", cursive;
+    }
+    #cont_tit-p {
+      font-size: 2rem;
+      margin-bottom: 4%;
+    }
+  }
+
+  /*****HOME*****/
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.75fr;
+    gap: 20px 20px;
+    grid-template-areas: "hometxt homeimg";
+  }
+  .homeimg {
+    grid-area: homeimg;
+    position: absolute;
+    right: 5%;
+    bottom: 1%;
+    animation-duration: 2.5s;
+  }
+  .hometxt {
+    grid-area: hometxt;
+    border-color: #3ab800;
+    border-style: solid;
+    border-radius: 7px;
+    box-shadow: 0px 0px 40px #3ab800;
+    font-size: 2rem;
+    font-style: italic;
+    max-width: 800px;
+    overflow-wrap: break-word;
+    margin-left: 10%;
+    padding: 35px;
+    animation-duration: 1.5s;
+  }
+
+  /*****IDENTIDAD*****/
+  .id_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 0.5fr 1.25fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "titulo_main titulo_main"
+      "row1_sec1 row1_sec2"
+      "staff staff";
+  }
+  .titulo_main {
+    grid-area: titulo_main;
+    width: 100%;
+    text-align: center;
+  }
+  .staff {
+    grid-area: staff;
+    margin: 0 0 0 20%;      
+    .carousel-item {
+      max-width: 800px;
+      overflow-wrap: break-word;
+      img {
+        border-radius: 45%;
+      }
+      .carousel-caption {
+        color: white;
+        text-align: center;
+        max-width: 300px;
+        right: 0;
+        top: 1px;
+        xtransform: translateY(-50%);
+        xbottom: initial;
+        background: #111;
+        padding: 10px;
+        height: 100%;
+        left: auto; /*Added*/
+      }
+    }
+  }
+  .row1_sec1 {
+    grid-area: row1_sec1;
+    border-color: #3ab800;
+    border-style: solid;
+    border-radius: 7px;
+    box-shadow: 0px 0px 40px #3ab800;
+    font-size: 1.5rem;
+    font-style: italic;
+    max-width: auto;
+    max-height: 275px;
+    overflow-wrap: break-word;
+    margin: 0 0 0 5%;
+    padding: 25px;
+    animation-duration: 1.5s;    
+  }
+  .row1_sec2 {
+    grid-area: row1_sec2;
+    display: flex;
+    justify-content: center;
+  }
+
+  /**PORTFOLIO**/
+  #portfolio {
+    background: black;
+    #port_container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 0.25fr 0.25fr;
+      gap: 30px 20px;
+      grid-template-areas:
+        "Dani Javo Mauri Pau"
+        "Vicky Tomy Coon IMG";
+      .port {
+        display: flex;
+        justify-content: center;
+      }
+      img {
+        border: 1px solid #ddd; /* Gray border */
+        border-radius: 4px; /* Rounded border */
+        padding: 5px; /* Some padding */
+        width: 250px; /* Set a small width */
+      }
+      /* Add a hover effect (blue shadow) */
+    }
+    .Dani {
+      grid-area: Dani;
+      img:hover {
+        transition: all 1.25s;
+        transform: scale(1.1, 1.1);
+        box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+      }
+    }
+    .Javo {
+      grid-area: Javo;
+      img:hover {
+        transition: all 1.25s;
+        transform: scale(1.1, 1.1);
+        box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+      }
+    }
+    .Mauri {
+      grid-area: Mauri;
+      img:hover {
+        transition: all 1.25s;
+        transform: scale(1.1, 1.1);
+        box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+      }
+    }
+    .Pau {
+      grid-area: Pau;
+      img:hover {
+        transition: all 1.25s;
+        transform: scale(1.1, 1.1);
+        box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+      }
+    }
+    .Vicky {
+      grid-area: Vicky;
+      img:hover {
+        transition: all 1.25s;
+        transform: scale(1.1, 1.1);
+        box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+      }
+    }
+    .Tomy {
+      grid-area: Tomy;
+      img:hover {
+        transition: all 1.25s;
+        transform: scale(1.1, 1.1);
+        box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+      }
+    }
+    .Coon {
+      grid-area: Coon;
+      img:hover {
+        transition: all 1.25s;
+        transform: scale(1.1, 1.1);
+        box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+      }
+    }
+    .IMG {
+      grid-area: IMG;
+      animation-duration: 5s;
+      #coondeco {
+        width: 100%;
+        border: none;
+      }
+    }
+  }
+  /**Servicios**/
+  #servicios {
+    .row{
+      align-items: stretch;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;      
+    }
+    .card {      
+      max-width: 30%;
+      padding: .75rem;
+      margin-bottom: 2rem;          
+      background: #111;
+      border-radius: 7px;
+      margin: 2.5px;
+      box-shadow: 0px 0px 5px #3ab800;
+    }    
+    .card > img {
+      margin-bottom: .75rem;
+      border-radius: 7px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #3ab800; 
+    }    
+    .card-text {
+      font-size: 1rem;
+      
+    }
+  }
+
+  /*****CONTACTO*****/
+  #contacto {
+    padding: 0 50px 50px 50px;
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-template-areas: "contcoon port_container";
+    }
+    #contcoon {
+      grid-area: contcoon;
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      max-width: auto;
+      max-height: 400px;
+      animation-duration: 3s;
+    }
+    #port_container {
+      grid-area: port_container;
+      .contact_f {
+        background: #111;
+        border-radius: 5px;
+        border-color: #53d318;
+        border-style: solid;
+        margin: 15px;
+        padding: 10px;
+        width: auto;
+        #container {
+          grid-area: contact_form;
+          padding: 10px;
+          input[type="text"],
+          select,
+          textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 20px;
+            margin-bottom: 16px;
+            resize: both;
+            display: block;
+          }
+          .submit {
+            background-color: #330867;
+            color: white;
+            padding: 10px 15px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            input[type="submit"]:hover {
+              background-color: #45a049;
+            }
+          }
+          #reset {
+            background-color: rgb(53, 53, 53);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            input[type="submit"]:hover {
+              background-color: #45a049;
+            }
+          }
+        }
+      }
+    }
+  }
+}

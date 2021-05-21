@@ -1,0 +1,82 @@
+body {
+  background-color: black;
+}
+
+body #logContainer {
+  position: absolute;
+  padding: 8% 0 0 13%;
+}
+
+body #logocont {
+  margin: 15px;
+}
+
+body #logocont p {
+  font-family: "Bungee", cursive;
+  color: white;
+  text-align: center;
+  max-width: 100px;
+}
+
+body .mainbox {
+  background-color: black;
+  margin: auto;
+  height: 600px;
+  width: 600px;
+  position: relative;
+}
+
+body .mainbox .err {
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 11rem;
+  position: absolute;
+  left: 20%;
+  top: 8%;
+  text-shadow: 8px 8px 5px #166678;
+}
+
+body .mainbox .far {
+  position: absolute;
+  font-size: 8.5rem;
+  left: 42%;
+  top: 15%;
+  color: #ffffff;
+  text-shadow: 3px 3px 5px #166678;
+}
+
+body .mainbox .err2 {
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 11rem;
+  position: absolute;
+  left: 68%;
+  top: 8%;
+  text-shadow: 8px 8px 5px #166678;
+}
+
+body .mainbox .msg {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 16%;
+  top: 45%;
+  width: 75%;
+  text-shadow: 4px 4px 5px #166678;
+}
+
+body .mainbox a {
+  text-decoration: none;
+  color: #7db9b3;
+}
+
+body .mainbox a:hover {
+  text-decoration: underline;
+}
+
+body .mainbox h3 {
+  font-style: italic;
+}
+/*# sourceMappingURL=notfound.css.map */

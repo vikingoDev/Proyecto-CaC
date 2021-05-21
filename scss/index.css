@@ -1,0 +1,522 @@
+@charset "UTF-8";
+body {
+  background-color: #111;
+  color: whitesmoke;
+  opacity: 1;
+  padding-left: 130px;
+  overflow: hidden;
+  /**SECCIONES**/
+  /*****Header*****/
+  /*****Títulos*****/
+  /*****HOME*****/
+  /*****IDENTIDAD*****/
+  /**PORTFOLIO**/
+  /**Servicios**/
+  /*****CONTACTO*****/
+}
+
+body .section {
+  min-height: 100vh;
+}
+
+body header {
+  width: 130px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header #logocont {
+  margin: 15px;
+}
+
+body header #logocont p {
+  font-family: "Bungee", cursive;
+  color: white;
+  text-align: center;
+  max-width: 100px;
+}
+
+body header .sidenav {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  text-decoration: none;
+}
+
+body header .sidenav a {
+  color: #818181;
+  display: block;
+  padding: auto;
+  margin: 15px 0 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .sidenav a img {
+  color: #f1f1f1;
+  width: 30px;
+  height: 30px;
+}
+
+body #cont_txt {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+body #cont_txt #cont_tit,
+body #cont_txt #cont_tit-p {
+  font-size: 2.9rem;
+  -webkit-text-stroke: 1px #75ff33;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: glow-title 2s ease-in-out infinite alternate;
+          animation: glow-title 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow-title {
+  from {
+    text-shadow: 0 0 10px #75ff33, 0 0 20px #75ff33;
+  }
+  to {
+    text-shadow: 0 0 15px #75ff33;
+  }
+}
+
+@keyframes glow-title {
+  from {
+    text-shadow: 0 0 10px #75ff33, 0 0 20px #75ff33;
+  }
+  to {
+    text-shadow: 0 0 15px #75ff33;
+  }
+}
+
+body #cont_txt #cont_tit {
+  font-family: "Bungee", cursive;
+}
+
+body #cont_txt #cont_tit-p {
+  font-size: 2rem;
+  margin-bottom: 4%;
+}
+
+body .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1.75fr;
+      grid-template-rows: 1.75fr;
+  gap: 20px 20px;
+      grid-template-areas: "hometxt homeimg";
+}
+
+body .homeimg {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: homeimg;
+  position: absolute;
+  right: 5%;
+  bottom: 1%;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+}
+
+body .hometxt {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: hometxt;
+  border-color: #3ab800;
+  border-style: solid;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 0px 40px #3ab800;
+          box-shadow: 0px 0px 40px #3ab800;
+  font-size: 2rem;
+  font-style: italic;
+  max-width: 800px;
+  overflow-wrap: break-word;
+  margin-left: 10%;
+  padding: 35px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+body .id_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 0.25fr 0.5fr 1.25fr;
+      grid-template-rows: 0.25fr 0.5fr 1.25fr;
+  gap: 0px 0px;
+      grid-template-areas: "titulo_main titulo_main" "row1_sec1 row1_sec2" "staff staff";
+}
+
+body .titulo_main {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: titulo_main;
+  width: 100%;
+  text-align: center;
+}
+
+body .staff {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: staff;
+  margin: 0 0 0 20%;
+}
+
+body .staff .carousel-item {
+  max-width: 800px;
+  overflow-wrap: break-word;
+}
+
+body .staff .carousel-item img {
+  border-radius: 45%;
+}
+
+body .staff .carousel-item .carousel-caption {
+  color: white;
+  text-align: center;
+  max-width: 300px;
+  right: 0;
+  top: 1px;
+  xtransform: translateY(-50%);
+  xbottom: initial;
+  background: #111;
+  padding: 10px;
+  height: 100%;
+  left: auto;
+  /*Added*/
+}
+
+body .row1_sec1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: row1_sec1;
+  border-color: #3ab800;
+  border-style: solid;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 0px 40px #3ab800;
+          box-shadow: 0px 0px 40px #3ab800;
+  font-size: 1.5rem;
+  font-style: italic;
+  max-width: auto;
+  max-height: 275px;
+  overflow-wrap: break-word;
+  margin: 0 0 0 5%;
+  padding: 25px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+body .row1_sec2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: row1_sec2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #portfolio {
+  background: black;
+}
+
+body #portfolio #port_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 0.25fr 0.25fr;
+      grid-template-rows: 0.25fr 0.25fr;
+  gap: 30px 20px;
+      grid-template-areas: "Dani Javo Mauri Pau" "Vicky Tomy Coon IMG";
+  /* Add a hover effect (blue shadow) */
+}
+
+body #portfolio #port_container .port {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #portfolio #port_container img {
+  border: 1px solid #ddd;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded border */
+  padding: 5px;
+  /* Some padding */
+  width: 250px;
+  /* Set a small width */
+}
+
+body #portfolio .Dani {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: Dani;
+}
+
+body #portfolio .Dani img:hover {
+  -webkit-transition: all 1.25s;
+  transition: all 1.25s;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+          box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+
+body #portfolio .Javo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: Javo;
+}
+
+body #portfolio .Javo img:hover {
+  -webkit-transition: all 1.25s;
+  transition: all 1.25s;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+          box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+
+body #portfolio .Mauri {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: Mauri;
+}
+
+body #portfolio .Mauri img:hover {
+  -webkit-transition: all 1.25s;
+  transition: all 1.25s;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+          box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+
+body #portfolio .Pau {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: Pau;
+}
+
+body #portfolio .Pau img:hover {
+  -webkit-transition: all 1.25s;
+  transition: all 1.25s;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+          box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+
+body #portfolio .Vicky {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: Vicky;
+}
+
+body #portfolio .Vicky img:hover {
+  -webkit-transition: all 1.25s;
+  transition: all 1.25s;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+          box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+
+body #portfolio .Tomy {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: Tomy;
+}
+
+body #portfolio .Tomy img:hover {
+  -webkit-transition: all 1.25s;
+  transition: all 1.25s;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+          box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+
+body #portfolio .Coon {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: Coon;
+}
+
+body #portfolio .Coon img:hover {
+  -webkit-transition: all 1.25s;
+  transition: all 1.25s;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+          box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
+
+body #portfolio .IMG {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: IMG;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+body #portfolio .IMG #coondeco {
+  width: 100%;
+  border: none;
+}
+
+body #servicios .row {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+body #servicios .card {
+  max-width: 30%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  background: #111;
+  border-radius: 7px;
+  margin: 2.5px;
+  -webkit-box-shadow: 0px 0px 5px #3ab800;
+          box-shadow: 0px 0px 5px #3ab800;
+}
+
+body #servicios .card > img {
+  margin-bottom: .75rem;
+  border-radius: 7px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #3ab800;
+}
+
+body #servicios .card-text {
+  font-size: 1rem;
+}
+
+body #contacto {
+  padding: 0 50px 50px 50px;
+}
+
+body #contacto .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0px 0px;
+      grid-template-areas: "contcoon port_container";
+}
+
+body #contacto #contcoon {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: contcoon;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: auto;
+  max-height: 400px;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+body #contacto #port_container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: port_container;
+}
+
+body #contacto #port_container .contact_f {
+  background: #111;
+  border-radius: 5px;
+  border-color: #53d318;
+  border-style: solid;
+  margin: 15px;
+  padding: 10px;
+  width: auto;
+}
+
+body #contacto #port_container .contact_f #container {
+  grid-area: contact_form;
+  padding: 10px;
+}
+
+body #contacto #port_container .contact_f #container input[type="text"],
+body #contacto #port_container .contact_f #container select,
+body #contacto #port_container .contact_f #container textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  resize: both;
+  display: block;
+}
+
+body #contacto #port_container .contact_f #container .submit {
+  background-color: #330867;
+  color: white;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+body #contacto #port_container .contact_f #container .submit input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+body #contacto #port_container .contact_f #container #reset {
+  background-color: #353535;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+body #contacto #port_container .contact_f #container #reset input[type="submit"]:hover {
+  background-color: #45a049;
+}
+/*# sourceMappingURL=index.css.map */
